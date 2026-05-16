@@ -1,0 +1,23 @@
+REGISTER_USER U01
+BORROW U01 B01
+PRINT_BORROWED U01
+RETURN U01 B01
+PRINT_BORROWED U01 ---> U01 has no borrowed books (borrowed B01 and returned it)
+
+REGISTER_USER U01  ---> user already exist ignore 
+BORROW U01 B01
+BORROW U01 B02
+PRINT_BORROWED U01 ----> print B01 and B02 
+
+REGISTER_USER U01 ---> ---> user already exist ignore 
+RETURN U01 B01  ----> returned B01 
+PRINT_BORROWED U01 ----> only have B02 left , so it should print B02 expected
+
+TEST U01 U02 ---> ---> user already exist ignore 
+RETURN U01 B01  ----> returned B01 
+PRINT_BORROWED U01 ----> only have B02 left , so it should print B02 expected
+
+
+
+ADD_BOOK B1 The Clean Coder
+ADD_BOOK B2 Designing Data-Intensive Applications

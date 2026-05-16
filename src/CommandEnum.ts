@@ -1,0 +1,6 @@
+export enum Command {
+    REGISTER_USER = 'REGISTER_USER',
+    BORROW = 'BORROW',
+    RETURN = 'RETURN',
+    PRINT_BORROWED = 'PRINT_BORROWED'
+}
